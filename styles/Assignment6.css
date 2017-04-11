@@ -1,0 +1,8 @@
+section.newcust{background-color: #F0E68C; visibility: hidden; width: 600px;
+            position: absolute; left: 0px; width: 600px;}
+
+section.shipchange{background-color:	#7FFFD4; visibility: hidden;
+            position: absolute;  left: 0px; width: 600px;}
+            
+section.deletecust{background-color:	#7FFFD4; visibility: hidden;
+            position: absolute;  left: 0px; width: 600px;}

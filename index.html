@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+      <script src="js/Assignment6.js"></script> 
+</head>
+
+<body>
+    
+    
+ <section id ="Title">
+        <h1>Customer Data</h1>
+        <hr>
+        
+        <select onchange="MenuChoice()" id="menu">
+            <option>Please select an option.</option>
+            <option>New Customer</option>
+            <option>Change Ship-To</option>
+            <option>Delete Customer</option>
+            
+        </select>     
+    </section>
+
+
+    <section id="newcust" class="newcust" >
+        
+         <label>Please Enter a Customer ID: </label>
+         <input type="text" id="custid">
+            <label class="example"> <I>The customer ID should be 5 uppercase text characters.</I></label>
+        <br>
+        <br>    
+            <label>Pleaes enter the Customer Name: </label>
+            <input type="text" id="custname">
+        <br>
+        <br>
+            <label>Pleaes enter the Customer City: </label>
+            <input type="text" id="custcity">
+ 
+        <br>
+        <br>
+             <button onclick="MakeNewCustomer()" id="newcust">Add a New Customer</button>
+             
+            
+        <br>
+        
+        <hr>
+        <br>
+    
+        
+        <label id="result">The operation's result will display here.</label>
+    
+    </section>
+    
+    
+    <section id="shipchange" class="shipchange" >
+        
+         <label>Please Enter an Order ID: </label>
+         <input type="text" id="orderid">
+            
+        <br>
+        <br>
+            <label>Pleaes enter the Ship-to Name: </label>
+            <input type="text" id="shipname">
+        <br>
+        <br>
+            <label>Pleaes enter the Ship-to Street Address: </label>
+            <input type="text" id="shipaddress">
+        <br>
+        <br>
+            <label>Pleaes enter the Ship-to City: </label>
+            <input type="text" id="shipcity">
+        <br>
+        <br>
+            
+            <label>Pleaes enter the Ship-to Postal Code: </label>
+            <input type="text" id="postcode">
+        <br>
+        <br>
+             <button onclick="ChangeShip()" id="newship">Change Ship-to Address</button>
+             
+            
+        <br>
+        
+        <hr>
+        <br>
+    
+        
+        <label id="result2">The operation's result will display here.</label>
+    
+    </section>
+    
+    <section id="deletecust" class="deletecust">
+        <br>
+            <label>Please enter a Customer ID:</label>
+            <input type="text" id="deleteid">
+        <br>
+        <br>
+            <button onclick="DeleteCustomer()" id="delete">Delete Customer</button>
+        <hr>
+        <br>
+            <label id="result3">The operation's result will display here.</label>
+
+</section>
+ 
+ 
+</body>
+</html>
